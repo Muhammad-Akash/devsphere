@@ -228,11 +228,28 @@ button { font: inherit; color: inherit; }
   50%      { box-shadow: 0 0 0 6px rgba(165, 180, 252, 0.06); }
 }
 
-.text-gradient {
-  background: linear-gradient(100deg, #7dd3fc 0%, #a5b4fc 58%, #c4b5fd 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+.hero__accent {
+  position: relative;
+  display: inline-block;
+  color: #a5b4fc;
+}
+
+.hero__accent::after {
+  content: "";
+  position: absolute;
+  left: 0.02em;
+  right: 0.02em;
+  bottom: -0.055em;
+  height: 0.052em;
+  border-radius: 999px;
+  background: rgba(165, 180, 252, 0.55);
+  transform: scaleX(0);
+  transform-origin: left center;
+  animation: accentDraw 0.85s 0.5s var(--ease-out) forwards;
+}
+
+@keyframes accentDraw {
+  to { transform: scaleX(1); }
 }
 
 /* ---------- buttons ---------- */
@@ -1123,4 +1140,5 @@ button { font: inherit; color: inherit; }
 
   [data-reveal] { opacity: 1; transform: none; }
   .net, .chip, .hero__cue-dot, .eyebrow__dot { animation: none; }
+  .hero__accent::after { animation: none; transform: none; }
 }
