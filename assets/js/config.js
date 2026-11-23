@@ -17,7 +17,7 @@ window.DEVSPHERE_CONFIG = {
   group: "https://www.facebook.com/groups/1864705694861230",
 
   // ── Secondary destinations (leave empty to hide the link) ──
-  page: "",
+  page: "https://www.facebook.com/profile.php?id=61596843781283",
   x: "",
   github: "",
 
