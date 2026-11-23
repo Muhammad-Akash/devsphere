@@ -45,7 +45,12 @@ html {
 
 body {
   margin: 0;
-  background: var(--bg);
+  position: relative;
+  background:
+    radial-gradient(1200px 760px at 16% -6%, rgba(14, 165, 233, 0.1), transparent 70%),
+    radial-gradient(1000px 680px at 86% 10%, rgba(139, 92, 246, 0.1), transparent 70%),
+    radial-gradient(900px 620px at 52% 96%, rgba(190, 24, 93, 0.055), transparent 74%),
+    #040914;
   color: var(--text);
   font-family: var(--font);
   font-size: 16px;
@@ -54,6 +59,36 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+/* ---------- page-wide animated backdrop ---------- */
+.page-grid {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, rgba(148, 163, 184, 0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.055) 1px, transparent 1px);
+  background-size: 84px 84px;
+  -webkit-mask-image: radial-gradient(120% 100% at 50% 42%, #000 0%, rgba(0, 0, 0, 0.5) 62%, transparent 100%);
+  mask-image: radial-gradient(120% 100% at 50% 42%, #000 0%, rgba(0, 0, 0, 0.5) 62%, transparent 100%);
+}
+
+.page-network {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+main,
+.footer {
+  position: relative;
+  z-index: 2;
 }
 
 body.is-locked { overflow: hidden; }
@@ -118,7 +153,7 @@ button { font: inherit; color: inherit; }
   background:
     radial-gradient(900px 480px at 12% 0%, rgba(14, 165, 233, 0.08), transparent 70%),
     radial-gradient(760px 420px at 88% 100%, rgba(139, 92, 246, 0.08), transparent 70%),
-    var(--bg-2);
+    rgba(10, 21, 48, 0.52);
   border-block: 1px solid var(--line);
 }
 
@@ -430,9 +465,8 @@ button { font: inherit; color: inherit; }
   z-index: -5;
   overflow: hidden;
   background:
-    radial-gradient(1200px 700px at 22% 8%, rgba(13, 32, 66, 0.9), transparent 72%),
-    radial-gradient(900px 620px at 82% 22%, rgba(24, 18, 58, 0.75), transparent 70%),
-    #040914;
+    radial-gradient(1200px 700px at 22% 8%, rgba(13, 32, 66, 0.55), transparent 72%),
+    radial-gradient(900px 620px at 82% 22%, rgba(24, 18, 58, 0.5), transparent 70%);
 }
 
 .hero__aurora {
@@ -474,27 +508,6 @@ button { font: inherit; color: inherit; }
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
   background-size: 160px 160px;
   pointer-events: none;
-}
-
-.hero__canvas {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -4;
-  opacity: 0.6;
-}
-
-.hero__grid {
-  position: absolute;
-  inset: 0;
-  z-index: -3;
-  background-image:
-    linear-gradient(to right, rgba(148, 163, 184, 0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
-  background-size: 84px 84px;
-  -webkit-mask-image: radial-gradient(circle at 46% 42%, #000 0%, rgba(0, 0, 0, 0.4) 48%, transparent 80%);
-  mask-image: radial-gradient(circle at 46% 42%, #000 0%, rgba(0, 0, 0, 0.4) 48%, transparent 80%);
 }
 
 .hero__inner {
@@ -956,7 +969,7 @@ button { font: inherit; color: inherit; }
 /* ---------- footer ---------- */
 .footer {
   border-top: 1px solid var(--line);
-  background: #030814;
+  background: rgba(3, 8, 20, 0.82);
   padding-block: clamp(48px, 7vw, 72px) 28px;
 }
 

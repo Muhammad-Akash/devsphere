@@ -93,9 +93,12 @@ Update the absolute URLs in `index.html` so social previews resolve:
   focus returned to the toggle.
 - `prefers-reduced-motion` stops the particle canvas, the constellation drift and all
   reveal transitions — content renders immediately.
-- The particle canvas pauses when the hero leaves the viewport or the tab is hidden,
-  caps device pixel ratio at 2, and scales particle count with viewport area.
+- The particle network is a single fixed canvas behind the whole page: it never resizes
+  on scroll, pauses when the tab is hidden, caps device pixel ratio at 2, and scales
+  particle count with viewport area.
 - Reveal animations use `IntersectionObserver` and are unobserved after firing.
+- All page chrome sits in a higher stacking layer than the backdrop (`.page-grid`,
+  `.page-network`), so the animation costs one composited layer, not per-section repaints.
 - No web fonts are used above the fold blocking text: `display=swap` with a system fallback.
 - All graphics are inline SVG or a single 1200×630 PNG for social cards.
 

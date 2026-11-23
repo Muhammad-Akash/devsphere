@@ -198,7 +198,7 @@
       [139, 92, 246],
       [148, 163, 184],
     ];
-    var LINK_DIST = 138;
+    var LINK_DIST = 120;
     var LINK_DIST_SQ = LINK_DIST * LINK_DIST;
 
     var width = 0;
@@ -206,7 +206,6 @@
     var dpr = 1;
     var nodes = [];
     var frame = 0;
-    var inView = true;
 
     function makeNode() {
       var color = COLORS[(Math.random() * COLORS.length) | 0];
@@ -217,13 +216,12 @@
         vy: (Math.random() - 0.5) * 0.16,
         r: Math.random() * 1.5 + 0.7,
         rgb: color,
-        a: Math.random() * 0.35 + 0.25,
+        a: Math.random() * 0.4 + 0.3,
       };
     }
 
     function resize() {
-      var host = canvas.parentElement || canvas;
-      var rect = host.getBoundingClientRect();
+      var rect = canvas.getBoundingClientRect();
       var nextW = Math.max(1, Math.round(rect.width));
       var nextH = Math.max(1, Math.round(rect.height));
 
@@ -237,8 +235,8 @@
       width = nextW;
       height = nextH;
 
-      var density = nextW < 720 ? 26000 : 19000;
-      var target = Math.max(16, Math.min(110, Math.round((nextW * nextH) / density)));
+      var density = nextW < 720 ? 20000 : 14000;
+      var target = Math.max(18, Math.min(130, Math.round((nextW * nextH) / density)));
       nodes = [];
       for (var i = 0; i < target; i++) nodes.push(makeNode());
     }
@@ -256,7 +254,7 @@
           if (distSq > LINK_DIST_SQ) continue;
 
           var t = 1 - distSq / LINK_DIST_SQ;
-          ctx.strokeStyle = "rgba(56, 189, 248, " + (t * 0.11).toFixed(3) + ")";
+          ctx.strokeStyle = "rgba(56, 189, 248, " + (t * 0.13).toFixed(3) + ")";
           ctx.lineWidth = 1;
           ctx.beginPath();
           ctx.moveTo(a.x, a.y);
@@ -315,21 +313,9 @@
 
     start();
 
-    if ("IntersectionObserver" in window) {
-      var io = new IntersectionObserver(
-        function (entries) {
-          inView = entries[0].isIntersecting;
-          if (inView) start();
-          else stop();
-        },
-        { threshold: 0 }
-      );
-      io.observe(canvas);
-    }
-
     document.addEventListener("visibilitychange", function () {
       if (document.hidden) stop();
-      else if (inView) start();
+      else start();
     });
 
     var resizeTimer = 0;
