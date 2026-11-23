@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>DevSphere — Developers. Ideas. Collaboration.</title>
+  <meta name="description" content="DevSphere is a global community for developers, designers, programmers and tech enthusiasts. Share ideas, showcase your work, find collaborators, and discover new opportunities." />
+  <link rel="canonical" href="https://muhammad-akash.github.io/devsphere/" />
+  <meta name="theme-color" content="#050B1B" />
+  <meta name="color-scheme" content="dark" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="DevSphere" />
+  <meta property="og:url" content="https://muhammad-akash.github.io/devsphere/" />
+  <meta property="og:title" content="DevSphere — Where Developers Connect, Collaborate & Create" />
+  <meta property="og:description" content="Join a growing community of developers, programmers, designers, and tech enthusiasts. Share ideas, showcase your work, find collaborators, and discover new opportunities." />
+  <meta property="og:image" content="https://muhammad-akash.github.io/devsphere/assets/img/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="DevSphere — Developers. Ideas. Collaboration." />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DevSphere — Where Developers Connect, Collaborate & Create" />
+  <meta name="twitter:description" content="A global community for developers, designers and tech enthusiasts. Build Together. Grow Together." />
+  <meta name="twitter:image" content="https://muhammad-akash.github.io/devsphere/assets/img/og-cover.png" />
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "DevSphere",
+    "slogan": "Build Together. Grow Together.",
+    "description": "An independent global community for app developers, web developers, programmers, designers, freelancers and technology enthusiasts.",
+    "url": "https://muhammad-akash.github.io/devsphere/",
+    "logo": "https://muhammad-akash.github.io/devsphere/assets/img/favicon.svg",
+    "sameAs": ["https://www.facebook.com/groups/1864705694861230"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ═══════════ NAVIGATION ═══════════ -->
+  <header class="nav" id="nav" data-scrolled="false">
+    <div class="container nav__inner">
+      <a class="brand" href="#home" aria-label="DevSphere — home">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="brandCore" x1="6" y1="4" x2="26" y2="28" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#22D3EE" /><stop offset=".55" stop-color="#0EA5E9" /><stop offset="1" stop-color="#8B5CF6" />
+            </linearGradient>
+          </defs>
+          <circle cx="16" cy="16" r="6.2" fill="url(#brandCore)" />
+          <ellipse cx="16" cy="16" rx="13.4" ry="5.2" transform="rotate(-26 16 16)" fill="none" stroke="url(#brandCore)" stroke-width="1.5" />
+          <circle cx="26.6" cy="9.6" r="1.9" fill="#22D3EE" />
+        </svg>
+        <span class="brand__name">DevSphere</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a class="nav__link" href="#home">Home</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#community">Community</a>
+        <a class="nav__link" href="#opportunities">Opportunities</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--primary btn--sm nav__cta" data-ds-link="group" href="https://www.facebook.com/groups/1864705694861230" target="_blank" rel="noopener noreferrer">
+          Join Community
+        </a>
+        <button class="nav__toggle" id="navToggle" type="button"
+                aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav__mobile" id="mobileMenu" hidden>
+      <nav aria-label="Mobile">
+        <a class="nav__mlink" href="#home">Home</a>
+        <a class="nav__mlink" href="#about">About</a>
+        <a class="nav__mlink" href="#community">Community</a>
+        <a class="nav__mlink" href="#opportunities">Opportunities</a>
+      </nav>
+      <a class="btn btn--primary btn--block" data-ds-link="group" href="https://www.facebook.com/groups/1864705694861230" target="_blank" rel="noopener noreferrer">
+        Join Community
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__aurora hero__aurora--1"></div>
+        <div class="hero__aurora hero__aurora--2"></div>
+        <div class="hero__aurora hero__aurora--3"></div>
+        <div class="hero__grain"></div>
+      </div>
+      <canvas class="hero__canvas" id="networkCanvas" aria-hidden="true"></canvas>
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__panel">
+          <p class="eyebrow" data-reveal>
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+            A global community of builders
+          </p>
+
+          <h1 class="hero__title" data-reveal>
+            <span class="hero__line">Where Developers</span>
+            <span class="hero__line">Connect, Collaborate</span>
+            <span class="hero__line">&amp; <span class="text-gradient">Create.</span></span>
+          </h1>
+
+          <p class="hero__text" data-reveal>
+            Join a growing community of developers, programmers, designers, and tech
+            enthusiasts. Share ideas, showcase your work, find collaborators, and
+            discover new opportunities.
+          </p>
+
+          <div class="hero__actions" data-reveal>
+            <a class="btn btn--primary btn--lg" data-ds-link="group" href="https://www.facebook.com/groups/1864705694861230" target="_blank" rel="noopener noreferrer">
+              Join Our Community
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--ghost btn--lg" href="#about">Explore DevSphere</a>
+          </div>
+
+          <p class="hero__meta" data-reveal>Free to join · Open to developers worldwide</p>
+        </div>
+
+        <div class="hero__visual" data-reveal aria-hidden="true">
+          <svg class="net" viewBox="0 0 620 560" fill="none">
+            <g class="net__edges"><line x1="21.4" y1="44" x2="49" y2="117.7" /><line x1="21.4" y1="44" x2="143.5" y2="45.1" /><line x1="21.4" y1="44" x2="151.5" y2="119.9" /><line x1="143.5" y1="45.1" x2="151.5" y2="119.9" /><line x1="143.5" y1="45.1" x2="226.2" y2="26.3" /><line x1="143.5" y1="45.1" x2="49" y2="117.7" /><line x1="226.2" y1="26.3" x2="292.9" y2="22.1" /><line x1="226.2" y1="26.3" x2="231.2" y2="131.7" /><line x1="292.9" y1="22.1" x2="397.5" y2="56.7" /><line x1="292.9" y1="22.1" x2="358.8" y2="114.3" /><line x1="397.5" y1="56.7" x2="358.8" y2="114.3" /><line x1="397.5" y1="56.7" x2="471" y2="51.8" /><line x1="397.5" y1="56.7" x2="411" y2="141" /><line x1="471" y1="51.8" x2="499.5" y2="149.1" /><line x1="471" y1="51.8" x2="569" y2="23.2" /><line x1="569" y1="23.2" x2="499.5" y2="149.1" /><line x1="569" y1="23.2" x2="397.5" y2="56.7" /><line x1="49" y1="117.7" x2="36.5" y2="217.6" /><line x1="49" y1="117.7" x2="151.5" y2="119.9" /><line x1="151.5" y1="119.9" x2="231.2" y2="131.7" /><line x1="231.2" y1="131.7" x2="325.7" y2="209.9" /><line x1="358.8" y1="114.3" x2="411" y2="141" /><line x1="358.8" y1="114.3" x2="325.7" y2="209.9" /><line x1="411" y1="141" x2="421.2" y2="209.5" /><line x1="499.5" y1="149.1" x2="411" y2="141" /><line x1="499.5" y1="149.1" x2="483.2" y2="237.3" /><line x1="499.5" y1="149.1" x2="421.2" y2="209.5" /><line x1="36.5" y1="217.6" x2="114.9" y2="239.7" /><line x1="36.5" y1="217.6" x2="68.8" y2="314.2" /><line x1="114.9" y1="239.7" x2="68.8" y2="314.2" /><line x1="114.9" y1="239.7" x2="172.4" y2="345.5" /><line x1="325.7" y1="209.9" x2="421.2" y2="209.5" /><line x1="325.7" y1="209.9" x2="411" y2="141" /><line x1="421.2" y1="209.5" x2="483.2" y2="237.3" /><line x1="483.2" y1="237.3" x2="587.9" y2="227" /><line x1="587.9" y1="227" x2="615.7" y2="312.4" /><line x1="587.9" y1="227" x2="499.5" y2="149.1" /><line x1="68.8" y1="314.2" x2="172.4" y2="345.5" /><line x1="172.4" y1="345.5" x2="203.3" y2="420.5" /><line x1="172.4" y1="345.5" x2="260.4" y2="333.9" /><line x1="172.4" y1="345.5" x2="149.9" y2="440.7" /><line x1="260.4" y1="333.9" x2="331.3" y2="322.5" /><line x1="260.4" y1="333.9" x2="203.3" y2="420.5" /><line x1="331.3" y1="322.5" x2="399.5" y2="406.4" /><line x1="331.3" y1="322.5" x2="323.5" y2="433.5" /><line x1="443.5" y1="340.7" x2="399.5" y2="406.4" /><line x1="443.5" y1="340.7" x2="482.4" y2="416" /><line x1="443.5" y1="340.7" x2="542" y2="338.9" /><line x1="542" y1="338.9" x2="615.7" y2="312.4" /><line x1="542" y1="338.9" x2="580" y2="412.3" /><line x1="542" y1="338.9" x2="482.4" y2="416" /><line x1="615.7" y1="312.4" x2="580" y2="412.3" /><line x1="62.4" y1="433.1" x2="149.9" y2="440.7" /><line x1="62.4" y1="433.1" x2="68.8" y2="314.2" /><line x1="62.4" y1="433.1" x2="151.6" y2="529.9" /><line x1="149.9" y1="440.7" x2="203.3" y2="420.5" /><line x1="149.9" y1="440.7" x2="151.6" y2="529.9" /><line x1="323.5" y1="433.5" x2="399.5" y2="406.4" /><line x1="323.5" y1="433.5" x2="343.4" y2="528.8" /><line x1="323.5" y1="433.5" x2="256.5" y2="521.3" /><line x1="399.5" y1="406.4" x2="482.4" y2="416" /><line x1="580" y1="412.3" x2="482.4" y2="416" /><line x1="151.6" y1="529.9" x2="256.5" y2="521.3" /><line x1="151.6" y1="529.9" x2="203.3" y2="420.5" /><line x1="256.5" y1="521.3" x2="343.4" y2="528.8" /><line x1="343.4" y1="528.8" x2="436.2" y2="537.6" /><line x1="436.2" y1="537.6" x2="527.3" y2="511.7" /><line x1="436.2" y1="537.6" x2="482.4" y2="416" /><line x1="527.3" y1="511.7" x2="625.6" y2="510" /><line x1="527.3" y1="511.7" x2="482.4" y2="416" /><line x1="625.6" y1="510" x2="580" y2="412.3" /><line x1="625.6" y1="510" x2="482.4" y2="416" /></g><g class="net__nodes"><circle cx="21.4" cy="44" r="3.1" /><circle cx="143.5" cy="45.1" r="1.9" /><circle cx="226.2" cy="26.3" r="2.6" /><circle cx="292.9" cy="22.1" r="3.1" /><circle cx="397.5" cy="56.7" r="2.7" /><circle cx="471" cy="51.8" r="2.4" /><circle cx="569" cy="23.2" r="2.9" /><circle cx="49" cy="117.7" r="2.7" /><circle cx="151.5" cy="119.9" r="3.1" /><circle cx="231.2" cy="131.7" r="2.9" /><circle cx="358.8" cy="114.3" r="1.9" /><circle cx="411" cy="141" r="2.3" /><circle cx="499.5" cy="149.1" r="3.3" /><circle cx="36.5" cy="217.6" r="2.3" /><circle cx="114.9" cy="239.7" r="2.8" /><circle cx="325.7" cy="209.9" r="3.2" /><circle cx="421.2" cy="209.5" r="1.8" /><circle cx="483.2" cy="237.3" r="2.9" /><circle cx="587.9" cy="227" r="3.4" /><circle cx="68.8" cy="314.2" r="2.5" /><circle cx="172.4" cy="345.5" r="3.3" /><circle cx="260.4" cy="333.9" r="2.6" /><circle cx="331.3" cy="322.5" r="3.4" /><circle cx="443.5" cy="340.7" r="2.7" /><circle cx="542" cy="338.9" r="2.6" /><circle cx="615.7" cy="312.4" r="2.5" /><circle cx="62.4" cy="433.1" r="3.4" /><circle cx="149.9" cy="440.7" r="3.2" /><circle cx="203.3" cy="420.5" r="2.7" /><circle cx="323.5" cy="433.5" r="2.0" /><circle cx="399.5" cy="406.4" r="2.6" /><circle cx="482.4" cy="416" r="1.8" /><circle cx="580" cy="412.3" r="3.0" /><circle cx="151.6" cy="529.9" r="3.1" /><circle cx="256.5" cy="521.3" r="3.3" /><circle cx="343.4" cy="528.8" r="2.1" /><circle cx="436.2" cy="537.6" r="2.3" /><circle cx="527.3" cy="511.7" r="3.4" /><circle cx="625.6" cy="510" r="2.2" /></g>
+          </svg>
+
+          <div class="chip chip--a">
+            <span class="chip__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <code>const you = await community.join()</code>
+          </div>
+          <div class="chip chip--b">
+            <span class="chip__prompt" aria-hidden="true">›</span>
+            <code>git push origin your-next-big-thing</code>
+          </div>
+        </div>
+      </div>
+
+      <a class="hero__cue" href="#about" aria-label="Scroll to the next section">
+        <span class="hero__cue-track"><span class="hero__cue-dot"></span></span>
+      </a>
+    </section>
+
+    <!-- ═══════════ BENEFITS / ABOUT ═══════════ -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow eyebrow--plain" data-reveal>About DevSphere</p>
+          <h2 class="section__title" data-reveal>More Than Just a Developer Community.</h2>
+          <p class="section__text" data-reveal>Everything you need to connect, learn, collaborate, and grow.</p>
+        </header>
+
+        <div class="bento">
+          <article class="card card--wide" data-reveal>
+            <span class="card__index">01</span>
+            <span class="card__icon card__icon--blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="8" r="3.2" /><path d="M3.2 19.4a6 6 0 0 1 11.6 0" />
+                <path d="M16.2 5.4a3 3 0 0 1 0 5.6M18 14.4a5.4 5.4 0 0 1 3 5" />
+              </svg>
+            </span>
+            <h3 class="card__title">Connect With Developers</h3>
+            <p class="card__text">Meet developers from different backgrounds, locations, and experience levels.</p>
+          </article>
+
+          <article class="card card--wide" data-reveal>
+            <span class="card__index">02</span>
+            <span class="card__icon card__icon--cyan" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="14" rx="2.4" /><path d="M3 9h18M6.4 6.6h.01M8.8 6.6h.01" />
+                <path d="M9 21h6" /><path d="M12 18v3" /><path d="M12.6 11.2l3.2 2.1-3.2 2.1z" />
+              </svg>
+            </span>
+            <h3 class="card__title">Showcase Your Projects</h3>
+            <p class="card__text">Share your applications, websites, portfolios, and experiments.</p>
+          </article>
+
+          <article class="card" data-reveal>
+            <span class="card__index">03</span>
+            <span class="card__icon card__icon--purple" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="7" cy="17" r="2.6" /><circle cx="17" cy="7" r="2.6" />
+                <path d="M9.2 15.2l5.6-5.6" /><path d="M14.6 6.2l2.2-2.2M17.8 9.4l2.2-2.2" />
+                <path d="M6.2 14.6L4 16.8M9.4 17.8l-2.2 2.2" />
+              </svg>
+            </span>
+            <h3 class="card__title">Find Collaborators</h3>
+            <p class="card__text">Connect with people who can help turn your ideas into real products.</p>
+          </article>
+
+          <article class="card" data-reveal>
+            <span class="card__index">04</span>
+            <span class="card__icon card__icon--blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="7.4" width="18" height="12.6" rx="2.4" />
+                <path d="M8.6 7.4V5.6a1.8 1.8 0 0 1 1.8-1.8h3.2a1.8 1.8 0 0 1 1.8 1.8v1.8" />
+                <path d="M3 12.6h18" /><path d="M10.6 12.6v1.8h2.8v-1.8" />
+              </svg>
+            </span>
+            <h3 class="card__title">Discover Opportunities</h3>
+            <p class="card__text">Explore hiring opportunities, freelance projects, and professional connections.</p>
+          </article>
+
+          <article class="card" data-reveal>
+            <span class="card__index">05</span>
+            <span class="card__icon card__icon--cyan" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 5.6A1.6 1.6 0 0 1 5.6 4H11v16H5.6A1.6 1.6 0 0 1 4 18.4z" opacity=".7" />
+                <path d="M13 4h5.4A1.6 1.6 0 0 1 20 5.6v12.8a1.6 1.6 0 0 1-1.6 1.6H13z" />
+                <path d="M6.6 8h2.2M6.6 11.4h2.2M15.4 8h2.2M15.4 11.4h2.2" />
+              </svg>
+            </span>
+            <h3 class="card__title">Learn &amp; Share</h3>
+            <p class="card__text">Exchange knowledge, discuss technologies, and help others improve.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ SHOWCASE / COMMUNITY ═══════════ -->
+    <section class="section section--alt" id="community">
+      <div class="container">
+        <header class="section__head section__head--split">
+          <div>
+            <p class="eyebrow eyebrow--plain" data-reveal>Community</p>
+            <h2 class="section__title" data-reveal>Great Things Start With Connections.</h2>
+          </div>
+          <p class="section__text section__text--side" data-reveal>
+            Different disciplines, one room. Here's the kind of work people bring to
+            DevSphere — and the conversations that follow it.
+          </p>
+        </header>
+
+        <div class="showcase">
+          <article class="tile" data-reveal>
+            <div class="tile__art tile__art--blue" aria-hidden="true">
+              <svg viewBox="0 0 320 160" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <rect x="38" y="26" width="244" height="112" rx="8" />
+                <path d="M38 46h244" opacity=".55" />
+                <circle cx="52" cy="36" r="2.1" fill="currentColor" stroke="none" />
+                <circle cx="60" cy="36" r="2.1" fill="currentColor" stroke="none" opacity=".5" />
+                <circle cx="68" cy="36" r="2.1" fill="currentColor" stroke="none" opacity=".3" />
+                <path d="M54 64h52M54 76h88M54 88h40M54 100h70" opacity=".8" />
+                <path d="M152 60l-10 10 10 10M176 60l10 10-10 10M168 56l-8 28" opacity=".9" />
+                <rect x="196" y="62" width="70" height="34" rx="5" opacity=".45" />
+                <rect x="196" y="104" width="46" height="12" rx="4" opacity=".3" />
+              </svg>
+            </div>
+            <h3 class="tile__title">Web Development</h3>
+            <p class="tile__text">Front-end craft, back-end architecture, and everything served between.</p>
+          </article>
+
+          <article class="tile" data-reveal>
+            <div class="tile__art tile__art--purple" aria-hidden="true">
+              <svg viewBox="0 0 320 160" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <rect x="126" y="18" width="68" height="124" rx="12" />
+                <path d="M148 26h24" opacity=".5" />
+                <rect x="138" y="42" width="44" height="30" rx="5" opacity=".7" />
+                <path d="M138 82h44M138 92h30M138 102h36" opacity=".5" />
+                <rect x="138" y="114" width="44" height="14" rx="7" opacity=".35" />
+                <path d="M96 54h-44M96 106h-44M224 54h44M224 106h44" opacity=".25" stroke-dasharray="3 6" />
+                <circle cx="52" cy="54" r="3" fill="currentColor" stroke="none" opacity=".6" />
+                <circle cx="268" cy="106" r="3" fill="currentColor" stroke="none" opacity=".6" />
+              </svg>
+            </div>
+            <h3 class="tile__title">Mobile App Development</h3>
+            <p class="tile__text">iOS, Android, and cross-platform builds that ship to real devices.</p>
+          </article>
+
+          <article class="tile" data-reveal>
+            <div class="tile__art tile__art--cyan" aria-hidden="true">
+              <svg viewBox="0 0 320 160" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <rect x="40" y="34" width="62" height="42" rx="7" />
+                <rect x="130" y="34" width="62" height="42" rx="7" opacity=".75" />
+                <rect x="220" y="34" width="62" height="42" rx="7" opacity=".5" />
+                <path d="M102 55h28M192 55h28" />
+                <path d="M71 76v26a10 10 0 0 0 10 10h64a10 10 0 0 0 10-10V76" opacity=".6" />
+                <path d="M161 102v18a8 8 0 0 0 8 8h50a8 8 0 0 0 8-8v-18" opacity=".6" />
+                <circle cx="155" cy="55" r="2.6" fill="currentColor" stroke="none" />
+                <path d="M52 92h16M52 100h26M146 118h14M146 126h20" opacity=".45" />
+              </svg>
+            </div>
+            <h3 class="tile__title">Software Engineering</h3>
+            <p class="tile__text">Systems, infrastructure, tooling, and the engineering behind products.</p>
+          </article>
+
+          <article class="tile" data-reveal>
+            <div class="tile__art tile__art--blue" aria-hidden="true">
+              <svg viewBox="0 0 320 160" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <rect x="46" y="26" width="228" height="108" rx="8" opacity=".55" stroke-dasharray="4 6" />
+                <rect x="68" y="48" width="86" height="64" rx="6" />
+                <path d="M68 48l22-14h86l-22 14" opacity=".6" />
+                <path d="M190 48v64M190 48h62l-22-14h-40" opacity=".6" />
+                <path d="M84 118c22 0 22-34 44-34" />
+                <rect x="80" y="114" width="8" height="8" fill="currentColor" stroke="none" />
+                <rect x="124" y="80" width="8" height="8" fill="currentColor" stroke="none" />
+                <path d="M200 74h34M200 88h22" opacity=".5" />
+                <circle cx="206" cy="104" r="7" opacity=".6" />
+                <circle cx="224" cy="104" r="7" opacity=".4" />
+              </svg>
+            </div>
+            <h3 class="tile__title">UI/UX Design</h3>
+            <p class="tile__text">Interfaces, design systems, prototypes, and the details people feel.</p>
+          </article>
+
+          <article class="tile" data-reveal>
+            <div class="tile__art tile__art--purple" aria-hidden="true">
+              <svg viewBox="0 0 320 160" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <rect x="52" y="44" width="112" height="76" rx="7" />
+                <path d="M52 62h112" opacity=".5" />
+                <path d="M68 78h44M68 90h64M68 102h34" opacity=".7" />
+                <path d="M96 128h24a10 10 0 0 0 10-10V86" opacity=".45" />
+                <circle cx="196" cy="82" r="26" />
+                <path d="M196 68v14l10 7" />
+                <path d="M240 62h28M240 76h28M240 90h20" opacity=".4" />
+                <path d="M244 112l14 14M258 112l-14 14" opacity=".55" />
+              </svg>
+            </div>
+            <h3 class="tile__title">Freelancing</h3>
+            <p class="tile__text">Client work, pricing, scope, and building a practice that lasts.</p>
+          </article>
+
+          <article class="tile" data-reveal>
+            <div class="tile__art tile__art--cyan" aria-hidden="true">
+              <svg viewBox="0 0 320 160" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <path d="M56 122h208" opacity=".4" />
+                <rect x="74" y="86" width="26" height="36" rx="4" opacity=".5" />
+                <rect x="116" y="66" width="26" height="56" rx="4" opacity=".65" />
+                <rect x="158" y="94" width="26" height="28" rx="4" opacity=".35" />
+                <rect x="200" y="48" width="26" height="74" rx="4" opacity=".8" />
+                <path d="M74 78l42-26 42 20 42-40" stroke-dasharray="4 5" opacity=".7" />
+                <circle cx="200" cy="32" r="4" fill="currentColor" stroke="none" />
+                <path d="M238 122V54M232 60l6-6 6 6" opacity=".5" />
+                <circle cx="262" cy="112" r="12" opacity=".45" />
+                <path d="M258 112h8M262 108v8" opacity=".6" />
+              </svg>
+            </div>
+            <h3 class="tile__title">Startup &amp; Product</h3>
+            <p class="tile__text">Ideas to first users — product thinking, launches, and go-to-market.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ WHO CAN JOIN / OPPORTUNITIES ═══════════ -->
+    <section class="section" id="opportunities">
+      <div class="container audience">
+        <div class="audience__head">
+          <p class="eyebrow eyebrow--plain" data-reveal>Opportunities</p>
+          <h2 class="section__title" data-reveal>There's a Place for Everyone.</h2>
+          <p class="section__text" data-reveal>
+            Whether you're writing your first line of code or building your next big
+            product, you're welcome here.
+          </p>
+          <a class="link-arrow" href="#join" data-reveal>
+            Join DevSphere
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <ul class="audience__list">
+          <li class="audience__row" data-reveal>
+            <span class="audience__num">01</span>
+            <div>
+              <h3 class="audience__title">Beginners &amp; Students</h3>
+              <p class="audience__text">Ask the questions you're afraid to ask elsewhere. Get real answers from people a few steps ahead.</p>
+            </div>
+            <span class="audience__arrow" aria-hidden="true">
+              <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </li>
+          <li class="audience__row" data-reveal>
+            <span class="audience__num">02</span>
+            <div>
+              <h3 class="audience__title">Freelancers &amp; Independent Developers</h3>
+              <p class="audience__text">Swap client leads, scope advice, and the parts of solo work nobody warns you about.</p>
+            </div>
+            <span class="audience__arrow" aria-hidden="true">
+              <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </li>
+          <li class="audience__row" data-reveal>
+            <span class="audience__num">03</span>
+            <div>
+              <h3 class="audience__title">Professional Developers</h3>
+              <p class="audience__text">Compare notes on architecture, tooling, and the craft — without the noise of a feed built for likes.</p>
+            </div>
+            <span class="audience__arrow" aria-hidden="true">
+              <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </li>
+          <li class="audience__row" data-reveal>
+            <span class="audience__num">04</span>
+            <div>
+              <h3 class="audience__title">Founders &amp; Tech Enthusiasts</h3>
+              <p class="audience__text">Find the technical people who understand the problem you're trying to solve.</p>
+            </div>
+            <span class="audience__arrow" aria-hidden="true">
+              <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ═══════════ FINAL CTA ═══════════ -->
+    <section class="cta" id="join">
+      <div class="container">
+        <div class="cta__panel" data-reveal>
+          <div class="cta__grid" aria-hidden="true"></div>
+          <div class="cta__glow" aria-hidden="true"></div>
+          <svg class="cta__orbit" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+            <circle cx="200" cy="200" r="140" stroke="rgba(34,211,238,.22)" stroke-dasharray="2 9" />
+            <circle cx="200" cy="200" r="196" stroke="rgba(139,92,246,.14)" />
+            <circle cx="200" cy="60" r="4" fill="#22D3EE" />
+            <circle cx="362" cy="258" r="3" fill="#8B5CF6" />
+          </svg>
+
+          <div class="cta__body">
+            <p class="eyebrow eyebrow--center" data-reveal>Join DevSphere</p>
+            <h2 class="cta__title" data-reveal>Your Next Connection Could Change Everything.</h2>
+            <p class="cta__text" data-reveal>
+              Meet developers, share your ideas, find collaborators, and become part of
+              something bigger.
+            </p>
+            <a class="btn btn--primary btn--xl" data-ds-link="group" href="https://www.facebook.com/groups/1864705694861230" target="_blank" rel="noopener noreferrer" data-reveal>
+              Join DevSphere on Facebook
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <p class="cta__note" data-reveal>Free to join. Open to developers worldwide.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand" href="#home" aria-label="DevSphere — home">
+            <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+              <circle cx="16" cy="16" r="6.2" fill="url(#brandCore)" />
+              <ellipse cx="16" cy="16" rx="13.4" ry="5.2" transform="rotate(-26 16 16)" fill="none" stroke="url(#brandCore)" stroke-width="1.5" />
+              <circle cx="26.6" cy="9.6" r="1.9" fill="#22D3EE" />
+            </svg>
+            <span class="brand__name">DevSphere</span>
+          </a>
+          <p class="footer__tagline">Developers. Ideas. Collaboration.</p>
+          <p class="footer__desc">
+            An independent community for developers, designers, freelancers and tech
+            enthusiasts. Build Together. Grow Together.
+          </p>
+        </div>
+
+        <nav class="footer__col" aria-label="Footer navigation">
+          <h2 class="footer__heading">Navigate</h2>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#community">Community</a>
+          <a href="#opportunities">Opportunities</a>
+        </nav>
+
+        <nav class="footer__col" aria-label="Community links">
+          <h2 class="footer__heading">Community</h2>
+          <a data-ds-link="group" href="https://www.facebook.com/groups/1864705694861230" target="_blank" rel="noopener noreferrer">Facebook Group</a>
+          <a data-ds-link="page" target="_blank" rel="noopener noreferrer" hidden>Facebook Page</a>
+          <a href="#join">Join DevSphere</a>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 DevSphere. Build Together. Grow Together.</p>
+        <p class="footer__made">Made by the community, for the community.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
