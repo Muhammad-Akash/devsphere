@@ -1,5 +1,5 @@
 /* ============================================================
-   DevSphere — site configuration
+   DevSphere - site configuration
    ------------------------------------------------------------
    Single source of truth for every outbound destination.
    Change the values here and every CTA, nav button and footer

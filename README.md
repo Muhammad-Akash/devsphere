@@ -1,4 +1,4 @@
-# DevSphere — Landing Page
+# DevSphere landing page
 
 Single-page landing site for **DevSphere**, an independent global community for
 developers, designers and tech enthusiasts. The whole page has one job: get a
@@ -53,7 +53,7 @@ Changing `group` updates every join button at once.
 
 ## Local preview
 
-No tooling required — open `index.html` in a browser.
+No tooling required. Open `index.html` in a browser.
 
 If you want a local server (recommended, so relative paths behave exactly like
 production):
@@ -92,7 +92,7 @@ Update the absolute URLs in `index.html` so social previews resolve:
 - Mobile menu is a real disclosure: `aria-expanded`, `aria-controls`, Escape to close,
   focus returned to the toggle.
 - `prefers-reduced-motion` stops the particle canvas, the constellation drift and all
-  reveal transitions — content renders immediately.
+  reveal transitions, so content renders immediately.
 - The particle network is a single fixed canvas behind the whole page: it never resizes
   on scroll, pauses when the tab is hidden, caps device pixel ratio at 2, and scales
   particle count with viewport area.
@@ -101,6 +101,19 @@ Update the absolute URLs in `index.html` so social previews resolve:
   `.page-network`), so the animation costs one composited layer, not per-section repaints.
 - No web fonts are used above the fold blocking text: `display=swap` with a system fallback.
 - All graphics are inline SVG or a single 1200×630 PNG for social cards.
+
+## Prose check
+
+Copy is linted with [unsloppify](https://github.com/petems/unsloppify) so the AI tells
+stay out:
+
+```bash
+uvx unsloppify index.html README.md assets/js/*.js assets/css/*.css
+```
+
+Aim for zero `error` and zero `warning` findings. The `info` notes that remain are
+three-item lists and words fixed by the brief ("More Than Just a Developer
+Community", "Showcase Your Projects"), not slop.
 
 ## Content rules
 

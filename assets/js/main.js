@@ -1,5 +1,5 @@
 /* ============================================================
-   DevSphere — page behaviour
+   DevSphere - page behaviour
    nav · mobile menu · config links · scroll reveals ·
    section highlighting · hero particle network
    ============================================================ */

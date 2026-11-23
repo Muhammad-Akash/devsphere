@@ -1,5 +1,5 @@
 /* ============================================================
-   DevSphere — landing page styles
+   DevSphere - landing page styles
    Sections: tokens · base · layout · buttons · nav · hero ·
              benefits · showcase · audience · cta · footer · motion
    ============================================================ */
@@ -573,7 +573,7 @@ button { font: inherit; color: inherit; }
   letter-spacing: 0.015em;
 }
 
-/* hero visual — constellation */
+/* hero visual - constellation */
 .hero__visual {
   position: relative;
   display: grid;
