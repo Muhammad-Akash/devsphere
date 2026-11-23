@@ -304,7 +304,15 @@ button { font: inherit; color: inherit; }
   flex: none;
 }
 
-.brand__mark { width: 30px; height: 30px; flex: none; }
+.ds-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.brand__mark { width: 32px; height: 32px; flex: none; }
 
 .brand__name {
   font-weight: 800;
